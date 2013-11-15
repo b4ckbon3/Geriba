@@ -7,9 +7,10 @@ Administracion de Reservas y Recepciones de Posadas
 Desarrolladores / Tareas adquiridas:
 -----------------------------------
 
-notf0und mail@domain.com
+notf0und gonzartur@gmail.com
 + MySQL (Crear tablas)
 + Subir script (.sql) al repositorio.
++ Desarrollo de clases y frontend para la administración/registro de los usuarios.
 
 b4ckbon3 jmdominguez@gmail.com
 + Maquetar HTML del Template.
