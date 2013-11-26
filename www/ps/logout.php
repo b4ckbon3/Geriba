@@ -5,5 +5,5 @@
 	
 	$_SESSION["NoteMsgs"][] = "Logout Successful";
 	
-	redirect("../login_soft.php");	
+	redirect("../login_soft.html");	
 ?>

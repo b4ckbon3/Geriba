@@ -1,4 +1,5 @@
 <?php
+include("../core/config.php");
 
 
 //Proccess Login
@@ -17,10 +18,10 @@ if(count($_POST)){
 		echo json_encode(array(
 		'error'    => $user->error(),
 		'form'     => $user->form_error(),
-		))
+		));
 	}	
 	
 	if($user->signed) redirect("../index.html");
-	else redirect("../login_soft.php");
+	else redirect("../login_soft.html");
 }
 ?>
