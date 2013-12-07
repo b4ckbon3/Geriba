@@ -1,7 +1,7 @@
 /*
  * Fuel UX Spinner
  * https://github.com/ExactTarget/fuelux
- * Improved by keenthemes for metronic theme
+ * Improved by keenthemes for Metronic theme
  * Copyright (c) 2012 ExactTarget
  * Licensed under the MIT license.
  */

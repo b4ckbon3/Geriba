@@ -1,14 +1,14 @@
 <?php
-	include('inc/class.uFlex.php');
+	include('inc/class.user.php');
 	
 	//Instantiate the uFlex object
-	$user = new uFlex(false);
+	$user = new user(false);
 	
 	//Add database credentials and information 
 	$user->db['host'] = "localhost";
 	$user->db['user'] = "root";
-	$user->db['pass'] = "";
-	$user->db['name'] = ""; //Database name
+	$user->db['pass'] = "Maconha13;";
+	$user->db['name'] = "projectdb"; //Database name
 	
 	/*
 	 * Instead of editing the class.uFlex.php file directly you may make
@@ -25,9 +25,31 @@
 	 * the object with the first parameter 'false', new uFlex(false), to halt
 	 * the object construction.
 	 */
+	 
+	 $user->opt['table_name'] = "user";
 		
 	//Starts the object by triggering the constructor
 	$user->start();	
+	
+	
+	
+	
+	// Turn on all error reporting
+	error_reporting(E_ALL);
+	/*
+	Default language
+	*/
+	$DEFAULT_LANGUAGE = 'en';
+	/*
+	Languages directory
+	*/
+	$LANGUAGE_DIR = 'core/languages';
+	require_once 'inc/class.Language.php';
+	
+	//Instantiate the language object
+	$language = new Language();
+	$lang = $language->getLanguage(@$_POST['lang']);
+	
 	
 	include('inc/functions.php');
 ?>
